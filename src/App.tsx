@@ -37,14 +37,12 @@ const studentData = [
 function App() {
   return <>
     <BarChart width={600} height={300} data={studentData}>
-      <Bar dataKey="submissions.beavers" fill="#FF8000" />
-      <Bar dataKey="submissions.stars" fill='#FFA07A' />
-      <CartesianGrid stroke="#ccc" />
+      <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
+      <Bar dataKey="submissions.beavers" fill="#8884d8" />
+      <Bar dataKey="submissions.stars" fill="#82ca9d" />
     </BarChart>
-
-
   </>
 
 }
